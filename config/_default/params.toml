@@ -1,6 +1,6 @@
 mainSections = ["posts"] # use it for blog page section 
 
-uniqueHomePage = true # change to false to add sidebar to homepage
+uniqueHomePage = false # change to false to add sidebar to homepage
 
 repo = "https://github.com/onweru/compose"
 
@@ -16,17 +16,17 @@ codeLineNumbers = false
 
 # Site logo
 [logo]
-  lightMode = "images/compose.svg"
-  darkMode = "images/compose-light.svg"
+  lightMode = "static/images/upkip-logo.svg"
+  darkMode = "static/images/upkip-logo.svg"
 
-[source]
-  name = "GitHub"
-  iconLight = "images/GitHubMarkLight.svg"
-  iconDark = "images/GitHubMarkDark.svg"
-  url = "https://github.com/onweru/compose/"
+#[source]
+# name = "GitHub"
+#  iconLight = "images/GitHubMarkLight.svg"
+#  iconDark = "images/GitHubMarkDark.svg"
+#  url = "https://github.com/onweru/compose/"
 
 # optional
 # attribution. Feel free to delete this
 [author]
-  name = "Weru"
-  url = "https://neuralvibes.com/author/"
+  name = "ICB"
+  url = "https://www.icb.bg"

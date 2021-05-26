@@ -1,13 +1,8 @@
 #  menu items
 [[main]]
-  name = "Docs"
+  name = "Upkip Administration"
   weight = 2
-  url = "docs/"
-
-[[main]]
-  name = "Example"
-  weight = 3
-  url = "https://docs.neuralvibes.com"
+  url = "/"
 
 # [[main]]
 #   name = "Blog"

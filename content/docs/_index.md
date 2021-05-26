@@ -1,18 +1,26 @@
 ---
-title: "Themes' Docs"
+title: "Overview"
 weight: 1
 ---
 
-These docs consists of two parts:
+## **Upkip Administration**
 
-1. Hugo Compose Themes docs
-2. Hugo Clarity Theme docs.
+**Purpose:** Upkip Administration application is used for different configurations:
 
-Please note that the features listed under each theme are independent of each other. That is to say, some features may only be found in one theme and not in both.
+- To configure **users and groups** in Upkip
+- To configure **organization structure** as tree starting with Factory, Departments and Machines. 
+- To configure **factory layout** with machines
+- For each machine are configured **Properties, Tags and Alarms**
+- **Events** configurations – used for triggering warnings or notifications
+- **Warnings** – configure different alarms, warnings or information when some event occurred.
+- **Notifications** – configure notifications to users’ emails, messages to user Viber phone number, to user phone as SMS, to Teams channel.
+- **Gateways** with Windows or Linux adapters
+- Configured persister servers, analysis servers and notification servers are visible
 
-<!-- That content is better than dummy lorem ipsum 2) That content serves a good real-world demo for this theme 3) Publish more structured docs for each theme which are better than long blocky READMEs -->
+In the **Upkip Administration** user can log with its **Microsoft user account** if configured for Upkip with role **system administrator** or **organization administrator.**
 
-{{< button "./compose/" "Compose Theme Docs" "mb-1" >}}
+- **System Administrator** – has full functionalities for different organizations
+- **Organization Administrator** – has full functionalities for one organization
 
-{{< button "./clarity/" "Clarity Theme Docs" >}}
+{{< button "./signinsignout/" "Sigh in and Sign out" "mb-1" >}}
 
