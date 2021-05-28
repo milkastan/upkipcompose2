@@ -1,0 +1,30 @@
+[{{ range $index, $page := .Site.AllPages }}
+{{- if and (ne $page.Type "json") (ne $page.Type "html") -}}
+{{- if and $index (gt $index 0) -}},{{- end }}
+{
+	"uri": "{{ $page.Permalink }}",
+	"title": {{ $page.Title | jsonify }},
+	"tags": {{ $page.Params.tags | jsonify }},
+	"description": {{ .Description | jsonify }},
+	"content": {{$page.Plain | jsonify}}
+}
+{{- $url := .Permalink -}}
+{{- $bundle := printf "/%s-%s" .File.BaseFileName "bundle"  -}}
+{{- $headless := .Site.GetPage $bundle -}}
+{{- if $headless -}}
+{{- $reusablePages := sort ($headless.Resources.ByType "page") ".Params.weight" -}}
+{{- $max := len $reusablePages -}}
+{{- range $index2, $el:= $reusablePages -}}
+{{- $name := substr $el.Name 0 -3 -}}
+{{- if and $index (gt $index 0) -}},{{- end }}
+{
+	"uri": "{{ printf "%s#%s" $url $name }}",
+	"title": {{ $el.Title | jsonify }},
+	"tags": {{ $page.Params.tags | jsonify }},
+	"description": {{ .Description | jsonify }},
+	"content": {{$el.Plain | jsonify}}
+}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}]

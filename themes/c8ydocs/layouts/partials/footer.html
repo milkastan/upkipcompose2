@@ -1,0 +1,39 @@
+
+<footer class="main-footer">
+  <div class="copyright">
+    <div class="container text-center">
+      <p class="small ">&copy; {{ now.Format "2006" }} {{ with .Site.Params.footer.copyright }}{{ . | safeHTML }}{{ end }}.</p>
+    </div>
+  </div>  
+</footer>
+
+{{ "<!-- Essential Scripts -->" | safeHTML }}
+
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "js/vendor/jquery.min.js" | absURL }}"></script>
+<script src="{{ "js/vendor/bootstrap.bundle.min.js" | absURL }}"></script>
+<script src="{{ "js/vendor/clipboard.js" | absURL }}"></script>
+
+<script src="{{ "js/vendor/zoom.js" | absURL }}"></script>
+<script src="{{ "js/main.js" | absURL }}"></script>
+
+{{/*  <script src="{{ "js/vendor/util.js" | absURL }}"></script>
+<script src="{{ "js/vendor/scrollspy.js" | absURL }}"></script>  */}}
+
+<!-- Plugin: search -->
+<script type="text/javascript" src="{{"plugins/lunr.min.js" | relURL}}"></script>
+<script type="text/javascript" src="{{"plugins/auto-complete.js" | relURL}}"></script>
+<link href="{{"plugins/auto-complete.css" | relURL}}" rel="stylesheet">
+<script type="text/javascript">
+  {{ if .Site.IsMultiLingual }}
+      var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
+  {{ else }}
+      var baseurl = "{{.Site.BaseURL}}";
+  {{ end }}
+</script>
+<script type="text/javascript" src="{{"plugins/search.js" | relURL}}"></script>
+
+{{/*  
+{{ with .Site.Data.settings.tracking.footer_scripts }}
+  {{ . | safeHTML }}
+{{ end }}  */}}

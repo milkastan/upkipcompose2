@@ -1,0 +1,56 @@
+.bg-primary.p-3.mt-5 {
+    background-color: transparent!important;
+}
+
+.bg-primary.p-3.mt-5 .text-white{
+    color: black!important;
+}
+
+img {
+max-width: 1000px;
+max-height: 1000px;
+}
+
+.container {
+    margin-left: 0px;
+}
+
+.main-top-bar .nav-right {
+    width: 400px !important;
+}
+
+.section-header {
+    background-color: #0043ff;
+    background-image: linear-gradient(to right, #1c8ce3 0, #0043ff 100%);
+}
+
+.main-content .page-section>h2,
+.main-content .page-section>h3,
+.main-content .page-section>h4 {
+    color: #0043ff;
+}
+
+.nav-sections .active {
+    color: #0043ff;
+}
+
+.nav-sections .list-group.nav .active {
+    color: #0043ff;
+}
+
+.nav-header .dropdown-toggle {
+    border: 2px solid #0043ff;
+    color: #0043ff;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .dropdown-menu .dropdown-menu-item.active, .dropdown-menu .dropdown-menu-item.active:hover, .dropdown-menu .dropdown-menu-item.active:focus {
+    background-color: #0043ff;
+}
+
+input.search-input:focus {
+    border-color: #0043ff !important;
+}
+
+a {
+    color: #0043ff;
+}

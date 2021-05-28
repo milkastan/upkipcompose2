@@ -1,0 +1,17 @@
+<button type="button" class="sidebar-toggle">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span>MENU</span>
+</button>
+<nav class="main-top-bar" >
+  <div class="d-flex container">
+    <ul class="nav flex-end nav-right">
+      <li>
+        {{- if not .Site.Params.disableSearch}}
+          <input class="search-input" data-search-input id="search-by" type="text" placeholder="Search">
+        {{- end}}
+      </li>
+    </ul>
+  </div>
+</nav>
