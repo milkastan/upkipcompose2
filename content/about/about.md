@@ -10,7 +10,9 @@ The Upkip documentation website provides the documentation for **Upkip Administr
 
 Documentation version is **28 May, 2021**.
 
-Upkip documentation website is developed by **Hugo** static website generator using the theme ‘c8ydocs’ by Interconsult Bulgaria LTD. 
+    
+Upkip documentation website is developed by Interconsult Bulgaria LTD using **Hugo** static website generator and the ‘c8ydocs’ theme.
+
 
 The actual content of the documentation is stored in source files in Markdown format. These Markdown files are located in the folder /content. 
 
